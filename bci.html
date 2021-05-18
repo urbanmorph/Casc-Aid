@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7e1091a083f54ef3aff3db8005e2bf15 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://rawcdn.githack.com/ardhi/Leaflet.MousePosition/c32f1c84/src/L.Control.MousePosition.js"></script>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/ardhi/Leaflet.MousePosition/c32f1c84/src/L.Control.MousePosition.css"/>
+    <script src="https://rawcdn.githack.com/ardhi/Leaflet.MousePosition/c32f1c84/src/L.Control.MousePosition.js"></script>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/ardhi/Leaflet.MousePosition/c32f1c84/src/L.Control.MousePosition.css"/>
+    <script src="https://rawcdn.githack.com/ardhi/Leaflet.MousePosition/c32f1c84/src/L.Control.MousePosition.js"></script>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/ardhi/Leaflet.MousePosition/c32f1c84/src/L.Control.MousePosition.css"/>
+    <script src="https://rawcdn.githack.com/ardhi/Leaflet.MousePosition/c32f1c84/src/L.Control.MousePosition.js"></script>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/ardhi/Leaflet.MousePosition/c32f1c84/src/L.Control.MousePosition.css"/>
+    <script src="https://rawcdn.githack.com/ardhi/Leaflet.MousePosition/c32f1c84/src/L.Control.MousePosition.js"></script>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/ardhi/Leaflet.MousePosition/c32f1c84/src/L.Control.MousePosition.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7e1091a083f54ef3aff3db8005e2bf15" ></div>
+        
+</body>
+<script>    
+    
+            var map_7e1091a083f54ef3aff3db8005e2bf15 = L.map(
+                "map_7e1091a083f54ef3aff3db8005e2bf15",
+                {
+                    center: [26.688435159010446, 74.86196091582087],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_961d881ce9d4402c8461c3b7a0d22b3b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var circle_marker_dde6e0caa0624e1e804ebdac0bb9f5d6 = L.circleMarker(
+                [26.72775075423828, 74.9796956251505],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_dde6e0caa0624e1e804ebdac0bb9f5d6.bindTooltip(
+                `<div>
+                     Shivraj, Chhirr<br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_55767feff4eb4e9fa6d1fc551184426e = L.circleMarker(
+                [26.654705631093925, 74.77490888609468],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_55767feff4eb4e9fa6d1fc551184426e.bindTooltip(
+                `<div>
+                     Gopal, Kuchil<br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2b7e4ab648904f3191c9dcdeb464ee95 = L.circleMarker(
+                [26.759287064019293, 74.78764295715668],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_2b7e4ab648904f3191c9dcdeb464ee95.bindTooltip(
+                `<div>
+                     Dashrth, Kalyanipura <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c886e520d49e479e81f167a3d3710aa3 = L.circleMarker(
+                [26.686775103298594, 74.92887972356296],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_c886e520d49e479e81f167a3d3710aa3.bindTooltip(
+                `<div>
+                     Monika, Harmada <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b72398cb9c394c98baae8981bddb03c9 = L.circleMarker(
+                [26.686775103298594, 74.92887972356296],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_b72398cb9c394c98baae8981bddb03c9.bindTooltip(
+                `<div>
+                     Omprkash, Harmada <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_145962f3faf5471692ae6bc6b470c4ab = L.circleMarker(
+                [26.686775103298594, 74.92887972356296],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_145962f3faf5471692ae6bc6b470c4ab.bindTooltip(
+                `<div>
+                     Sonika , Harmada <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d07166ba46e4314a75fda96da093d59 = L.circleMarker(
+                [26.631477097508107, 74.72534005038716],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_4d07166ba46e4314a75fda96da093d59.bindTooltip(
+                `<div>
+                     Kismat, Ararka <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae8e7f7da90b475bb70e82c6fdb04839 = L.circleMarker(
+                [26.65165685985573, 74.93695647055253],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_ae8e7f7da90b475bb70e82c6fdb04839.bindTooltip(
+                `<div>
+                     Chhotu, Tilonia <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81e8c8edd7de43d8af006414b9b10897 = L.circleMarker(
+                [26.65165685985573, 74.93695647055253],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_81e8c8edd7de43d8af006414b9b10897.bindTooltip(
+                `<div>
+                     Raghuveer, Tilonia <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a92b60f7eb044e90885ab259e1969922 = L.circleMarker(
+                [26.65165685985573, 74.93695647055253],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_a92b60f7eb044e90885ab259e1969922.bindTooltip(
+                `<div>
+                     Pooja, Tilonia <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c1201af55a8841d5b043bc6c8e97beba = L.circleMarker(
+                [26.748879661816996, 74.97319224155333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_c1201af55a8841d5b043bc6c8e97beba.bindTooltip(
+                `<div>
+                     Vishram , Chhota Narena <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_439a25ad2ec44093a1a9be14e9f418bd = L.circleMarker(
+                [26.683255185717616, 74.95497175741649],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_439a25ad2ec44093a1a9be14e9f418bd.bindTooltip(
+                `<div>
+                     Chhotu singh , Buwaru <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b7dbbc8ca67a4ccbbeb3087ddba9fe16 = L.circleMarker(
+                [26.720361823324325, 74.96064649994126],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_b7dbbc8ca67a4ccbbeb3087ddba9fe16.bindTooltip(
+                `<div>
+                     Payal Sharma, Rampura <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_670fc243764443e7afd6e99dc8354d1b = L.circleMarker(
+                [25.905940354206876, 75.23550324727572],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_670fc243764443e7afd6e99dc8354d1b.bindTooltip(
+                `<div>
+                     Dilip, Bogla <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c6b6fb8aedb841ce84d3bd809ded24e8 = L.circleMarker(
+                [26.73247581974941, 74.81302039700714],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_c6b6fb8aedb841ce84d3bd809ded24e8.bindTooltip(
+                `<div>
+                     Hariram, Singla <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_addd231ae1d9477db78e14c258cf693b = L.circleMarker(
+                [26.623300113130686, 75.24534168780775],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_addd231ae1d9477db78e14c258cf693b.bindTooltip(
+                `<div>
+                     Ravi Balai, Chhaparwara<br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c40a9e64cf7401d80ef6242198774b1 = L.circleMarker(
+                [26.417953541051727, 74.01444989574759],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_4c40a9e64cf7401d80ef6242198774b1.bindTooltip(
+                `<div>
+                     Rafik Mohammad, Kachnariya <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_96ee91357fce445da73dcae1d436d383 = L.circleMarker(
+                [26.588886691303085, 74.85953699499119],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_96ee91357fce445da73dcae1d436d383.bindTooltip(
+                `<div>
+                     Sitaram , Kishangarh <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_752800ef445e49449dc7884011d224e1 = L.circleMarker(
+                [26.446616516399157, 75.03734111061488],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_752800ef445e49449dc7884011d224e1.bindTooltip(
+                `<div>
+                     Marigrendar, Arain<br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3e86b3510fc34f55863c1682c8142d04 = L.circleMarker(
+                [26.65638072407606, 74.99454441110403],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            circle_marker_3e86b3510fc34f55863c1682c8142d04.bindTooltip(
+                `<div>
+                     Sanjay Malakar, Nalu <br>        Has Motorcycle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23d619404bb44a08a1b2e382be1c5651 = L.marker(
+                [26.67520999158204, 74.93060416185217],
+                {}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var icon_29e6975b7882499e9693d2db6ccab3d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_23d619404bb44a08a1b2e382be1c5651.setIcon(icon_29e6975b7882499e9693d2db6ccab3d2);
+        
+    
+            marker_23d619404bb44a08a1b2e382be1c5651.bindTooltip(
+                `<div>
+                     BCI Campus<br>Oximeter, mask<br>        Inventory as of 18 May 2021: Masks (1000), Oxymeters (100)<br>        Open: 24 hours
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_963f37a420234ce38e2090d4148d82ba = L.marker(
+                [26.681197646733885, 74.95508983587463],
+                {}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var icon_7b0134952a5848a1a95b130ac43e9c80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_963f37a420234ce38e2090d4148d82ba.setIcon(icon_7b0134952a5848a1a95b130ac43e9c80);
+        
+    
+            marker_963f37a420234ce38e2090d4148d82ba.bindTooltip(
+                `<div>
+                     PHC buharu<br>Medicines<br>        Inventory as of 19 May 2021: Medicines Available<br>        Open: 24 hours
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87b478c4db804cab99ae904225af7063 = L.marker(
+                [26.683275446418058, 74.91660624860877],
+                {}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var icon_0e75bb546a844354bfd9efb3c1caf9ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_87b478c4db804cab99ae904225af7063.setIcon(icon_0e75bb546a844354bfd9efb3c1caf9ce);
+        
+    
+            marker_87b478c4db804cab99ae904225af7063.bindTooltip(
+                `<div>
+                     CHC Harmara <br>Doctor, Medicines<br>        Inventory as of 20 May 2021: Medicines Available<br>        Open: 24 hours
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4572f69c1864e828d7ecf45efcc27aa = L.marker(
+                [26.787900123804377, 74.85584428611426],
+                {}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var icon_a4e7bafda521429cb70afe3d063a14a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_e4572f69c1864e828d7ecf45efcc27aa.setIcon(icon_a4e7bafda521429cb70afe3d063a14a3);
+        
+    
+            marker_e4572f69c1864e828d7ecf45efcc27aa.bindTooltip(
+                `<div>
+                     CHC Roopangarh<br>Doctor, Medicines<br>        Inventory as of 21 May 2021: Medicines Available<br>        Open: 24 hours
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c069bea20d38488ba125cc49696d4691 = L.marker(
+                [26.653912110247692, 74.77842244762483],
+                {}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var icon_3e164af562a74d6b8950ccda241bb7a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_c069bea20d38488ba125cc49696d4691.setIcon(icon_3e164af562a74d6b8950ccda241bb7a3);
+        
+    
+            marker_c069bea20d38488ba125cc49696d4691.bindTooltip(
+                `<div>
+                     CHC Kucheel <br>Doctor, Medicines<br>        Inventory as of 22 May 2021: Medicines Available<br>        Open: 24 hours
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_201cfc04d9da4a689bf7c77e3ee0a25f = L.marker(
+                [26.588886691303085, 74.85953699499119],
+                {}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var icon_0a2483e2e1574240b88400e76db96795 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "medkit", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_201cfc04d9da4a689bf7c77e3ee0a25f.setIcon(icon_0a2483e2e1574240b88400e76db96795);
+        
+    
+            marker_201cfc04d9da4a689bf7c77e3ee0a25f.bindTooltip(
+                `<div>
+                     YN hospital kishangarh<br>Doctor, Medicines<br>        Inventory as of 23 May 2021: Medicines Available<br>        Open: 24 hours
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bd2450046b3a4121980b370469adcc2c = L.circle(
+                [26.67520999158204, 74.93060416185217],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var circle_bdbb1db8eca449289dc63d302511e4ae = L.circle(
+                [26.681197646733885, 74.95508983587463],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var circle_f7658d5cc7d448bc92e216818d0397c7 = L.circle(
+                [26.683275446418058, 74.91660624860877],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var circle_791bd7d53b8543d0aa8ade49f2876db9 = L.circle(
+                [26.787900123804377, 74.85584428611426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var circle_01e1ab9d5c0048769060b543132e28d7 = L.circle(
+                [26.653912110247692, 74.77842244762483],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var circle_0533f4c1e6db4bc69c4a9ac2f1c682f8 = L.circle(
+                [26.588886691303085, 74.85953699499119],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var mouse_position_d4c303bb4ce849ef9e4363e9e6848415 = new L.Control.MousePosition(
+                {"emptyString": "Unavailable", "lngFirst": false, "numDigits": 5, "position": "bottomright", "prefix": "", "separator": " : "}
+            );
+            mouse_position_d4c303bb4ce849ef9e4363e9e6848415.options["latFormatter"] =
+                undefined;
+            mouse_position_d4c303bb4ce849ef9e4363e9e6848415.options["lngFormatter"] =
+                undefined;
+            map_7e1091a083f54ef3aff3db8005e2bf15.addControl(mouse_position_d4c303bb4ce849ef9e4363e9e6848415);
+        
+    
+            var circle_30dd874f3bb147bbb0c69f7513c722e4 = L.circle(
+                [26.67520999158204, 74.93060416185217],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var circle_d9e667710f5e407f9811da0a2c61cf2a = L.circle(
+                [26.681197646733885, 74.95508983587463],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var circle_89a37e957b914d8b99efa28187e918a5 = L.circle(
+                [26.683275446418058, 74.91660624860877],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var circle_347196d071b54863ae8bebc1c65d5067 = L.circle(
+                [26.787900123804377, 74.85584428611426],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var circle_e23ef72d94fb4d3f9e9eacc8b1774817 = L.circle(
+                [26.653912110247692, 74.77842244762483],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+    
+            var circle_2125f4e5f9ae439b9f43eb5b46664931 = L.circle(
+                [26.588886691303085, 74.85953699499119],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7e1091a083f54ef3aff3db8005e2bf15);
+        
+</script>
