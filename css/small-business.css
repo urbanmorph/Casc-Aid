@@ -33,3 +33,16 @@ footer.footer {
   padding-bottom: 4rem;
 }
 
+.contain {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;}
+
+.contain-long {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;}
+
+.bg-title {
+	background-color: #079cf5;
+}
